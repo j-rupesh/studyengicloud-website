@@ -44,7 +44,7 @@ export const Courses = () => {
                 
                 {/* Bubbles */}
                 <div className="absolute inset-0 overflow-hidden">
-                  {[...Array(5)].map((_, index) => (
+                  {[...Array(3)].map((_, index) => (
                     <div
                       key={index}
                       className="absolute rounded-full bg-white opacity-20 animate-bounce"
@@ -53,7 +53,7 @@ export const Courses = () => {
                         height: `${20 + Math.random() * 30}px`,
                         top: `${Math.random() * 80}%`,
                         left: `${Math.random() * 80}%`,
-                        animationDuration: `${3 + Math.random() * 2}s`,
+                        animationDuration: `${2 + Math.random() * 2}s`,
                       }}
                     ></div>
                   ))}

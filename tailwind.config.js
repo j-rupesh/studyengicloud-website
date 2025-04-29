@@ -17,6 +17,12 @@ module.exports = {
         shadow1: "0px 30px 40px 0px rgba(1, 11, 60, 0.1)",
         shadow2: "0px 30px 60px 0px rgba(0, 4, 48, 0.3)",
       },
+      // tailwind.config.js
+
+      animation: {
+        bounce: "bounce 3s infinite ease-in-out",
+      },
+      
     },
   },
   plugins: [],

@@ -59,4 +59,6 @@ export const courses = [
     cover: "../images/course12.jpg",
     title: "The business Intelligence analyst Course 2022",
   },
+
+  
 ]

@@ -121,7 +121,7 @@ const DownloadNotesSection = () => {
     <div className="bg-white py-12">
       {/* Notes Section */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-gray-900 mb-2">Semester I</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-2">Semester-I</h2>
         <h3 className="text-xl text-gray-700">Mathematics-I</h3>
       </div>
 

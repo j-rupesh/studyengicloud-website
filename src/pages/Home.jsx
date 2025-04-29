@@ -33,7 +33,26 @@ export const HomeContent = () => {
 
   return (
     <>
-      <section className="bg-secondary py-10 h-[92vh] md:h-full">
+     <section className="relative bg-secondary h-screen w-full sm:h-screen md:h-screen">
+
+  {/* 🫧Background Bubbles */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+    {[...Array(15)].map((_, i) => (
+      <div
+        key={i}
+        className="absolute rounded-full bg-[#548bf1] opacity-20 animate-bounce"
+        style={{
+          width: `${20 + Math.random() * 30}px`,
+          height: `${20 + Math.random() * 30}px`,
+          top: `${Math.random() * 100}%`,
+          left: `${Math.random() * 100}%`,
+          animationDuration: `${3 + Math.random() * 5}s`,
+          animationDelay: `${Math.random() * 2}s`,
+        }}
+      />
+    ))}
+    
+      </div>
         <div className="container">
           <div className="flex items-center justify-center md:flex-col">
 
@@ -50,7 +69,7 @@ export const HomeContent = () => {
             {/* </div> */}
 
             {/* Left Content */}
-            <div className="left w-1/2 text-black md:w-full">
+            <div className="left w-1/2 text-black md:w-full p-4">
               <h1 className="text-6xl sm:text-3xl leading-tight text-black font-semibold">
               Build  <br /> Your Learning <br /> Hub
               </h1>
