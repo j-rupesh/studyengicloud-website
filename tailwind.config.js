@@ -7,7 +7,7 @@ module.exports = {
       colors: {
         primary: "#2B4EFF",
         secondary: "#B8DDE3",
-        backbg: "rgba(43, 78, 255, 0.7)", // ❌ यहाँ semicolon (;) गलत था
+        backbg: "rgba(43, 78, 255, 0.7)",
       },
       screens: {
         md: { max: "800px" },
