@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const subjects = [
   {
     id: 1,
-    name: "Mathematics-I",
+    name: "Mathematics",
     sem1Path: "/fybtech/mathematics-i/semester-1",
     sem2Path: "/fybtech/mathematics-i/semester-2",
   },
@@ -36,14 +36,14 @@ const subjects = [
   {
     id: 6,
     name: "Problem Solving and Programming I",
-    sem1Path: "/fybtech/programming-i/semester-1",
-    sem2Path: "/fybtech/programming-i/semester-2",
+    sem1Path: "/fybtech/problem-solving-programming-i/semester-1",
+    sem2Path: "/fybtech/problem-solving-programming-i/semester-2",
   },
   {
     id: 7,
     name: "Engineering Graphics & Introduction to CAD",
-    sem1Path: "/fybtech/engineering-graphics/semester-1",
-    sem2Path: "/fybtech/engineering-graphics/semester-2",
+    sem1Path: "/fybtech/engineering-graphics-cad/semester-1",
+    sem2Path: "/fybtech/engineering-graphics-cad/semester-2",
   },
   {
     id: 8,

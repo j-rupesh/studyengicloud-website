@@ -76,7 +76,7 @@ export const Footer = () => {
 
         {/* Copyright */}
         <div className="border-t border-gray-300 mt-10 pt-5 text-center text-gray-500 text-sm bg-[#e6e8eb]">
-          © 2025 <span className="font-semibold text-black">StudyEngiCloud</span> All rights reserved.
+          © 2025 <span className="font-semibold text-black"> StudyEngiCloud</span> All rights reserved.
         </div>
       </footer>
     </>

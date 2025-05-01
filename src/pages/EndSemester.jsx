@@ -7,51 +7,51 @@ import { Link } from "react-router-dom";
 const subjects = [
   {
     id: 1,
-    name: "Mathematics-I",
-    sem1Path: "/fybtech/mathematics-i/semester-1",
-    sem2Path: "/fybtech/mathematics-i/semester-2",
+    name: "Mathematics",
+    sem1Path: "/fybtech/mathematics-i/semester-1-end",
+    sem2Path: "/fybtech/mathematics-i/semester-2-end",
   },
   {
     id: 2,
     name: "Physics",
-    sem1Path: "/fybtech/physics/semester-1",
-    sem2Path: "/fybtech/physics/semester-2",
+    sem1Path: "/fybtech/physics/semester-1-end",
+    sem2Path: "/fybtech/physics/semester-2-end",
   },
   {
     id: 3,
     name: "Industrial Chemistry",
-    sem1Path: "/fybtech/industrial-chemistry/semester-1",
-    sem2Path: "/fybtech/industrial-chemistry/semester-2",
+    sem1Path: "/fybtech/industrial-chemistry/semester-1-end",
+    sem2Path: "/fybtech/industrial-chemistry/semester-2-end",
   },
   {
     id: 4,
     name: "Basic Electronics Engineering",
-    sem1Path: "/fybtech/basic-electronics/semester-1",
-    sem2Path: "/fybtech/basic-electronics/semester-2",
+    sem1Path: "/fybtech/basic-electronics-engineering/semester-1-end",
+    sem2Path: "/fybtech/basic-electronics-engineering/semester-2-end",
   },
   {
     id: 5,
     name: "Engineering Mechanics",
-    sem1Path: "/fybtech/engineering-mechanics/semester-1",
-    sem2Path: "/fybtech/engineering-mechanics/semester-2",
+    sem1Path: "/fybtech/engineering-mechanics/semester-1-end",
+    sem2Path: "/fybtech/engineering-mechanics/semester-2-end",
   },
   {
     id: 6,
-    name: "Problem Solving and Programming I",
-    sem1Path: "/fybtech/programming-i/semester-1",
-    sem2Path: "/fybtech/programming-i/semester-2",
+    name: "Problem Solving and Programming I-end",
+    sem1Path: "/fybtech/problem-solving-programming-i/semester-1-end",
+    sem2Path: "/fybtech/problem-solving-programming-i/semester-2-end",
   },
   {
     id: 7,
-    name: "Engineering Graphics & Introduction to CAD",
-    sem1Path: "/fybtech/engineering-graphics/semester-1",
-    sem2Path: "/fybtech/engineering-graphics/semester-2",
+    name: "Engineering Graphics & Introduction to CAD-end",
+    sem1Path: "/fybtech/engineering-graphics-cad/semester-1-end",
+    sem2Path: "/fybtech/engineering-graphics-cad/semester-1-end",
   },
   {
     id: 8,
-    name: "Project Based Learning Management I",
-    sem1Path: "/fybtech/pbl-management-i/semester-1",
-    sem2Path: "/fybtech/pbl-management-i/semester-2",
+    name: "Project Based Learning Management I-end",
+    sem1Path: "/fybtech/pbl-management-i/semester-1-end",
+    sem2Path: "/fybtech/pbl-management-i/semester-2-end",
   },
 ];
 
@@ -78,7 +78,7 @@ const EndSemester = () => {
 
       {/* Title */}
       <h1 className="relative z-10 text-3xl sm:text-2xl md:text-3xl font-bold text-center mb-8 text-red-600 p-6 drop-shadow-md">
-        Second Semester - Subjects, Notes & Timetable
+        end Semester - Subjects, Notes & Timetable
       </h1>
 
       {/* Subject Cards */}

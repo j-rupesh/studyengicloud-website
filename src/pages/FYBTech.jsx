@@ -43,7 +43,7 @@ const FYBTech = () => {
             <div className="text-5xl mb-4">
               <BsFillLightningChargeFill />
             </div>
-            <h3 className="text-2xl font-semibold text-center">First Semester</h3>
+            <h3 className="text-2xl font-semibold text-center">In Semester</h3>
             <p className="text-center mt-4">Details about the First Semester go here.</p>
           </div>
         </Link>
