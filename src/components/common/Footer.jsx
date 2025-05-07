@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <>
-      {/* App Download Section */}
+      {/* {/*App Download Section/*}
       <section className="p-1 app w-4/5 m-auto rounded-lg shadow-lg text-white flex md:flex-col bg-[#184672] mt-16 relative z-10">
         <div className="left w-[60%] md:w-full p-10">
           <h1 className="text-4xl font-semibold leading-tight">
@@ -30,7 +30,38 @@ export const Footer = () => {
             <label className="text-sm">Play Store</label>
           </div>
         </div>
-      </section>
+      </section> */}
+
+
+
+
+      
+
+
+      {/* App Download Section - Coming Soon */}
+<section className="p-1 app w-4/5 m-auto rounded-lg shadow-lg text-white flex md:flex-col bg-[#3a3a3a] mt-16 relative z-10">
+  <div className="left w-[60%] md:w-full p-10">
+    <h1 className="text-4xl font-semibold leading-tight">
+      Start learning by <br /> Downloading Apps.
+    </h1>
+    <p className="text-gray-300 mt-2">Our mobile apps are launching soon!</p>
+  </div>
+  <div className="right w-[40%] md:w-full flex items-center px-5 rounded-r-lg rounded-bl-[500px] gap-8 bg-[#555555] md:bg-transparent md:p-8">
+    <div className="box flex gap-2 items-center px-5 py-3 border border-gray-300 text-gray-300 bg-transparent hover:bg-gray-200 hover:text-black shadow-shadow1 rounded-sm cursor-not-allowed opacity-60">
+      <BsApple />
+      <label className="text-sm">App Store (Coming Soon)</label>
+    </div>
+    <div className="box flex gap-2 items-center px-5 py-3 bg-gray-200 text-gray-600 shadow-shadow1 rounded-sm cursor-not-allowed opacity-60">
+      <BsGooglePlay />
+      <label className="text-sm">Play Store (Coming Soon)</label>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 
       {/* Footer Section */}
       <footer className="bg-[#F3F4F8] pt-32 -mt-24">
