@@ -13,24 +13,24 @@ export const Footer = () => {
 
   return (
     <>
-      {/* {/*App Download Section/*}
+      {/*App Download Section */}
       <section className="p-1 app w-4/5 m-auto rounded-lg shadow-lg text-white flex md:flex-col bg-[#184672] mt-16 relative z-10">
         <div className="left w-[60%] md:w-full p-10">
           <h1 className="text-4xl font-semibold leading-tight">
             Start learning by <br /> Downloading Apps.
           </h1>
         </div>
-        <div className="right w-[40%] md:w-full flex items-center px-5 rounded-r-lg rounded-bl-[500px] gap-8 bg-[#2edb2e] md:bg-transparent md:p-8">
-          <div className="box flex gap-2 items-center px-5 py-3 border text-white border-gray-50 hover:bg-white hover:text-black shadow-shadow1 rounded-sm">
+        <div className="right w-[40%] md:w-full flex items-center px-20 rounded-r-lg rounded-bl-[500px] gap-8 bg-[#2edb2e] md:bg-transparent md:p-8">
+          {/* <div className="box flex gap-2 items-center px-5 py-3 border text-white border-gray-50 hover:bg-white hover:text-black shadow-shadow1 rounded-sm">
             <BsApple />
             <label className="text-sm">App Store</label>
-          </div>
-          <div className="box flex gap-2 items-center px-5 py-3 bg-white text-black shadow-shadow1 rounded-sm">
+          </div> */}
+          <div className="box flex gap-2 items-center px-5 py-5 bg-white text-black shadow-shadow1 rounded-sm">
             <BsGooglePlay />
             <label className="text-sm">Play Store</label>
           </div>
         </div>
-      </section> */}
+      </section>
 
 
 
@@ -38,7 +38,7 @@ export const Footer = () => {
       
 
 
-      {/* App Download Section - Coming Soon */}
+      {/* App Download Section - Coming Soon
 <section className="p-1 app w-4/5 m-auto rounded-lg shadow-lg text-white flex md:flex-col bg-[#3a3a3a] mt-16 relative z-10">
   <div className="left w-[60%] md:w-full p-10">
     <h1 className="text-4xl font-semibold leading-tight">
@@ -56,7 +56,7 @@ export const Footer = () => {
       <label className="text-sm">Play Store (Coming Soon)</label>
     </div>
   </div>
-</section>
+</section> */}
 
 
 

@@ -34,7 +34,7 @@ export const HomeContent = () => {
 
   return (
     <>
-     <section className="relative  bg-secondary h-screen w-full sm:h-screen md:h-screen">
+     <section className="relative bg-secondary min-h-screen w-full py-10 overflow-hidden">
 
   {/* 🫧Background Bubbles */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -55,7 +55,7 @@ export const HomeContent = () => {
     
       </div>
         <div className="container">
-          <div className="flex items-center justify-center md:flex-col">
+          <div className="flex items-center justify-center md:flex-col ">
 
             {/* Category Button */}
             {/* <div
