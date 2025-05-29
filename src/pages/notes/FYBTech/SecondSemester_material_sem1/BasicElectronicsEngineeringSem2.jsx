@@ -41,92 +41,38 @@ const DownloadNotesSection = () => {
   const [allAnswered, setAllAnswered] = useState(false);
 
   const notesCategories = [
-    {
-      id: 1,
-      title: 'Unit 1',
-      thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-      downloadLink: 'https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view',
-      year: ' 🔴 2023-24',
-      questions: [
-        {
-          question: "What is the rank of the coefficient matrix of the following system of equations:\n$4x - 2y + 6z = 8,$\n$x + y - 3z = -1,$\n$15x - 3y + 9z = 21$?",
-          options: ["1", "2", "3", "Cannot be determined"],
-          correctAnswer: "2" // Solving shows the third equation is a multiple of the first, and the first two are independent.
-        },
-        {
-          question: "What is the nature of the solution for the system of equations:\n$4x - 2y + 6z = 8,$\n$x + y - 3z = -1,$\n$15x - 3y + 9z = 21$?",
-          options: ["Unique solution", "No solution", "Infinitely many solutions", "Trivial solution"],
-          correctAnswer: "Infinitely many solutions" // Since rank of coefficient matrix (2) < number of variables (3).
-        },
-        {
-          question: "A homogeneous system of linear equations $AX = 0$ is always:",
-          options: ["Inconsistent", "Consistent, with a unique trivial solution", "Consistent, with infinitely many non-trivial solutions", "Consistent, with no solution"],
-          correctAnswer: "Consistent, with a unique trivial solution" // It always has at least the solution x=0.
-        },
-        {
-          question: "Consider the homogeneous system:\n$x + y + 2z = 0,$\n$x + 2y + 3z = 0,$\n$x + 3y + 4z = 0,$\n$x + 4y + 7z = 0$ (assuming corrected fourth equation). What is the determinant of the coefficient matrix?",
-          options: ["0", "1", "-1", "2"],
-          correctAnswer: "0" // Solving the determinant of the 3x3 submatrix is 0, and the 4th equation is consistent with the dependent nature.
-        },
-        {
-          question: "What is the nature of the solution for the homogeneous system:\n$x + y + 2z = 0,$\n$x + 2y + 3z = 0,$\n$x + 3y + 4z = 0,$\n$x + 4y + 7z = 0$ (assuming corrected fourth equation)?",
-          options: ["Unique trivial solution $(0, 0, 0)$", "Infinitely many non-trivial solutions", "No solution", "Unique non-trivial solution"],
-          correctAnswer: "Infinitely many non-trivial solutions" // Since the determinant of the coefficient matrix is 0.
-        },
-        {
-          question: "For what condition on $a$ and $b$ does the system:\n$x + 2y + z = 8,$\n$x + 2y + 2z = 13,$\n$3x + 4y + az = b$\nhave no solution?",
-          options: ["$a = 6$ and $b \neq 29$", "$a \neq 6$", "$a = 6$ and $b = 29$", "This system always has a solution"],
-          correctAnswer: "$a = 6$ and $b \neq 29$" // Solving the first two gives a contradiction in terms of 'z' if not handled carefully in the third. After row operations, this condition arises for inconsistency.
-        },
-        {
-          question: "For what condition on $a$ does the system:\n$x + 2y + z = 8,$\n$x + 2y + 2z = 13,$\n$3x + 4y + az = b$\nhave a unique solution?",
-          options: ["$a = 6$", "$a \neq 6$", "$b = 29$", "This system cannot have a unique solution"],
-          correctAnswer: "$a \neq 6$" // When 'a' is not 6, the system will have a non-zero determinant for the relevant 3x3 submatrix after elimination, leading to a unique solution.
-        },
-        {
-          question: "For what condition on $a$ and $b$ does the system:\n$x + 2y + z = 8,$\n$x + 2y + 2z = 13,$\n$3x + 4y + az = b$\nhave an infinite number of solutions?",
-          options: ["$a = 6$ and $b \neq 29$", "$a \neq 6$", "$a = 6$ and $b = 29$", "This system cannot have infinitely many solutions"],
-          correctAnswer: "This system cannot have infinitely many solutions" // The first two equations themselves might lead to inconsistency or a constraint that prevents infinite solutions for all variables. A more rigorous row reduction would confirm this.
-        },
-        {
-          question: "Are the vectors $X_{1} = [2, -1, 3, 2], X_{2} = [1, 3, 4, 2], X_{3} = [3, -5, 2, 2]$ linearly dependent or linearly independent?",
-          options: ["Linearly dependent", "Linearly independent", "Cannot be determined", "Orthogonal"],
-          correctAnswer: "Linearly dependent" // The determinant of the matrix formed by these vectors (if we consider a 3x3 submatrix by ignoring one component) would be zero, indicating dependence. Alternatively, $2X_1 - X_2 - X_3 = [4-1-3, -2-3-(-5), 6-4-2, 4-2-2] = [0, 0, 0, 0]$.
-        },
-        {
-          question: "If $A = \frac{1}{3} \begin{bmatrix} 1 & 2 & 3a \\ 2 & 1 & 3b \\ 2 & -2 & 3c \end{bmatrix}$ is an orthogonal matrix, what is the value of $a$?",
-          options: ["$\pm \frac{2}{3}$", "$\pm \frac{1}{3}$", "0", "$\pm 2$"],
-          correctAnswer: "$\pm \frac{2}{3}$" // Using the property $AA^T = I$, the elements of the resulting matrix will give equations to solve for a, b, and c. For the (1,3) element of $AA^T$ to be 0, $1(3a) + 2(3b) + 3a(3c) = 0$, and for the (1,1) element to be 1, $(1/9)(1+4+9a^2) = 1$, leading to $a^2 = 4/9$.
-        },
-        {
-          question: "If $A = \frac{1}{3} \begin{bmatrix} 1 & 2 & 3a \\ 2 & 1 & 3b \\ 2 & -2 & 3c \end{bmatrix}$ is an orthogonal matrix, what is the value of $b$?",
-          options: ["$\pm \frac{2}{3}$", "$\pm \frac{1}{3}$", "0", "$\pm 2$"],
-          correctAnswer: "$\pm \frac{2}{3}$" // Similarly, from the (2,3) element of $AA^T$ being 0, $2(3a) + 1(3b) - 2(3c) = 0$, and from the (2,2) element being 1, $(1/9)(4+1+9b^2) = 1$, leading to $b^2 = 4/9$.
-        },
-        {
-          question: "If $A = \frac{1}{3} \begin{bmatrix} 1 & 2 & 3a \\ 2 & 1 & 3b \\ 2 & -2 & 3c \end{bmatrix}$ is an orthogonal matrix, what is the value of $c$?",
-          options: ["$\pm \frac{2}{3}$", "$\pm \frac{1}{3}$", "0", "$\pm 2$"],
-          correctAnswer: "$\pm \frac{1}{3}$" // From the (3,3) element of $AA^T$ being 1, $(1/9)(4+4+9c^2) = 1$, leading to $c^2 = 1/9$. The signs of a, b, and c would need to satisfy the off-diagonal zero conditions.
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: 'Unit 1',
-      thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-      downloadLink: 'https://drive.google.com/file/d/1BaJJqELAJQI3Gg6xBCoe2ex8ncJOoInm/view?usp=drive_link',
-      year: ' 🔴 2024-  25',
-      questions: [
-        { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
-        { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },
-        { question: "What does the acronym 'CPU' stand for?", options: ["Central Processing Unit", "Computer Processing Unit", "Core Processing Unit", "Command Processing Unit"], correctAnswer: "Central Processing Unit" },
-      ],
-    },
+    // {
+    //   id: 1,
+    //   title: 'Unit 1',
+    //   thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
+    //   downloadLink: 'https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view',
+    //   year: ' 🔴 2023-24',
+    //   questions: [
+    //     {
+    //       question: "What is the rank of the coefficient matrix of the following system of equations:\n$4x - 2y + 6z = 8,$\n$x + y - 3z = -1,$\n$15x - 3y + 9z = 21$?",
+    //       options: ["1", "2", "3", "Cannot be determined"],
+    //       correctAnswer: "2" // Solving shows the third equation is a multiple of the first, and the first two are independent.
+    //     },
+       
+    //   ],
+    // },
+    // {
+    //   id: 2,
+    //   title: 'Unit 1',
+    //   thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
+    //   downloadLink: 'https://drive.google.com/file/d/1BaJJqELAJQI3Gg6xBCoe2ex8ncJOoInm/view?usp=drive_link',
+    //   year: ' 🔴 2024-  25',
+    //   questions: [
+    //     { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
+    //     { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },
+    //     { question: "What does the acronym 'CPU' stand for?", options: ["Central Processing Unit", "Computer Processing Unit", "Core Processing Unit", "Command Processing Unit"], correctAnswer: "Central Processing Unit" },
+    //   ],
+    // },
   ];
 
   const fileItems = [
-    { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
-    { id: 2, name: "Graph Image.png", type: "image", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
+    { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "/notes/presentation.pptx" },
+    { id: 2, name: "Graph Image.png", type: "image", link: "/notes/presentation.pptx" },
     { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
     { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
   ];

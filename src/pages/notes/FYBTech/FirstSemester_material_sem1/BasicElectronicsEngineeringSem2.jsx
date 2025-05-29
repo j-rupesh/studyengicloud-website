@@ -40,13 +40,13 @@ const DownloadNotesSection = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [allAnswered, setAllAnswered] = useState(false);
 
-  const notesCategories = [
+  const notesCategories = [ 
     {
       id: 1,
-      title: 'Unit 1',
+      title: 'Unit 3 to 6',
       thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-      downloadLink: 'https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view',
-      year: ' 🔴 2023-24',
+      downloadLink: 'https://drive.google.com/file/d/1aCwFM1atqxFBUoPg2rNdSA9QVenJUiuQ/view?usp=sharing',
+      year: ' 🔴 (May 2024, 2022/2023)',
       questions: [
         {
           question: "What is the rank of the coefficient matrix of the following system of equations:\n$4x - 2y + 6z = 8,$\n$x + y - 3z = -1,$\n$15x - 3y + 9z = 21$?",

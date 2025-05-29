@@ -115,7 +115,7 @@ const DownloadNotesSection = () => {
       title: 'Unit 1',
       thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
       downloadLink: '/notes/c.pdf',
-      year: ' 🔴 2024-25',
+      year: ' 🔴 (July 2024 R, 2022/2023 Pattern)',
       questions: [
         { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
         { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },

@@ -45,8 +45,8 @@ const DownloadNotesSection = () => {
       id: 1,
       title: 'Unit 1',
       thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-      downloadLink: 'https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view',
-      year: ' 🔴 2023-24',
+      downloadLink: 'https://drive.google.com/file/d/1szanmBuRZt2YAf3VMxQ4DqsjW6wVU28I/view?usp=sharing',
+      year: ' 🔴 2024-25',
       questions: [
         {
           question: "What is the rank of the coefficient matrix of the following system of equations:\n$4x - 2y + 6z = 8,$\n$x + y - 3z = -1,$\n$15x - 3y + 9z = 21$?",
@@ -114,8 +114,21 @@ const DownloadNotesSection = () => {
       id: 2,
       title: 'Unit 1',
       thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-      downloadLink: 'https://drive.google.com/file/d/1BaJJqELAJQI3Gg6xBCoe2ex8ncJOoInm/view?usp=drive_link',
-      year: ' 🔴 2024-  25',
+      downloadLink: 'https://drive.google.com/file/d/1WgO_WkqQ85YpNNZKQsrykUyLsCXyPUQi/view?usp=sharing',
+      year: ' 🔴 2024-25',
+      questions: [
+        { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
+        { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },
+        { question: "What does the acronym 'CPU' stand for?", options: ["Central Processing Unit", "Computer Processing Unit", "Core Processing Unit", "Command Processing Unit"], correctAnswer: "Central Processing Unit" },
+      ],
+    },
+
+     {
+      id: 2,
+      title: 'Unit 1',
+      thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
+      downloadLink: 'https://drive.google.com/file/d/1bDYQgs6oAMJrRL6gnJwzjmbqeBvt0CDf/view?usp=sharing',
+      year: ' 🔴 2024-25',
       questions: [
         { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
         { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },
@@ -125,10 +138,10 @@ const DownloadNotesSection = () => {
   ];
 
   const fileItems = [
-    { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
-    { id: 2, name: "Graph Image.png", type: "image", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
-    { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
-    { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
+    // { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
+    // { id: 2, name: "Graph Image.png", type: "image", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
+    // { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
+    // { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
   ];
 
   const resetTest = () => {

@@ -5,32 +5,28 @@ import { Link } from "react-router-dom";
 const subjects = [
   {
     id: 1,
-    name: "Mathematics",
+    name: "Mathematics I",
     sem1Path: "/fybtech/mathematics-i/semester-1",
     // sem2Path: "/fybtech/mathematics-i/semester-2",
   },
-  {
-    id: 2,
-    name: "Physics",
-    sem1Path: "/fybtech/physics/semester-1",
-    // sem2Path: "/fybtech/physics/semester-2",
-  },
+  
+ 
   {
     id: 3,
-    name: "Industrial Chemistry",
-    sem1Path: "/fybtech/industrial-chemistry/semester-1",
+    name: "Engineering Mechanics",
+    sem1Path: "/fybtech/engineering-mechanics/semester-1",
     // sem2Path: "/fybtech/industrial-chemistry/semester-2",
   },
   {
     id: 4,
-    name: "Basic Electronics Engineering",
-    sem1Path: "/fybtech/basic-electronics/semester-1",
+    name: "Industrial Chemistry",
+    sem1Path: "/fybtech/industrial-chemistry/semester-1",
     // sem2Path: "/fybtech/basic-electronics/semester-2",
   },
   {
     id: 5,
-    name: "Engineering Mechanics",
-    sem1Path: "/fybtech/engineering-mechanics/semester-1",
+    name: "Basic Electronics Engineering",
+    sem1Path: "/fybtech/basic-electronics/semester-1",
     // sem2Path: "/fybtech/engineering-mechanics/semester-2",
   },
   {
@@ -105,74 +101,84 @@ const FirstSemester_sem1 = () => {
 </div>
 
 
-      {/* Exam Pattern */}
-      <div className="bg-gray-100 p-2 rounded-md shadow-md">
-        <h2 className="text-2xl sm:text-xl md:text-2xl font-bold text-center mb-6 text-blue-600">
-          Exam Pattern
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="min-w-full bg-white rounded-md overflow-hidden">
-            <thead className="bg-blue-500 text-white">
-              <tr>
-                <th className="py-3 px-6 text-left">Subject</th>
-                <th className="py-3 px-6 text-left">Exam Type</th>
-                <th className="py-3 px-6 text-left">Total Marks</th>
-                <th className="py-3 px-6 text-left">Duration</th>
-              </tr>
-            </thead>
-            <tbody className="text-gray-700">
-              <tr className="border-b">
-                <td className="py-4 px-6">Mathematics-I</td>
-                <td className="py-4 px-6">Written</td>
-                <td className="py-4 px-6">100</td>
-                <td className="py-4 px-6">3 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Physics</td>
-                <td className="py-4 px-6">Written + Lab</td>
-                <td className="py-4 px-6">70 + 30</td>
-                <td className="py-4 px-6">3 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Industrial Chemistry</td>
-                <td className="py-4 px-6">Written + Lab</td>
-                <td className="py-4 px-6">70 + 30</td>
-                <td className="py-4 px-6">3 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Basic Electronics Engineering</td>
-                <td className="py-4 px-6">Written</td>
-                <td className="py-4 px-6">100</td>
-                <td className="py-4 px-6">3 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Engineering Mechanics</td>
-                <td className="py-4 px-6">Written</td>
-                <td className="py-4 px-6">100</td>
-                <td className="py-4 px-6">3 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Problem Solving and Programming I</td>
-                <td className="py-4 px-6">Written + Lab</td>
-                <td className="py-4 px-6">70 + 30</td>
-                <td className="py-4 px-6">3 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Engineering Graphics & Introduction to CAD</td>
-                <td className="py-4 px-6">Practical</td>
-                <td className="py-4 px-6">50</td>
-                <td className="py-4 px-6">2 Hours</td>
-              </tr>
-              <tr className="border-b">
-                <td className="py-4 px-6">Project Based Learning Management I</td>
-                <td className="py-4 px-6">Project Evaluation</td>
-                <td className="py-4 px-6">100</td>
-                <td className="py-4 px-6">-</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white border border-gray-300">
+    <thead>
+      <tr class="bg-blue-500 text-white">
+        <th class="py-2 px-4 border-b text-left">Sr No</th>
+        <th class="py-2 px-4 border-b text-left">Course</th>
+        <th class="py-2 px-4 border-b text-left">Symbol</th>
+        <th class="py-2 px-4 border-b text-left">Th</th>
+        <th class="py-2 px-4 border-b text-left">Pr</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">1</td>
+        <td class="py-2 px-4 border-b">Engineering Mathematics -I</td>
+        <td class="py-2 px-4 border-b">EM-I</td>
+        <td class="py-2 px-4 border-b">3</td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">2</td>
+        <td class="py-2 px-4 border-b">Industrial Chemistry</td>
+        <td class="py-2 px-4 border-b">CHEM</td>
+        <td class="py-2 px-4 border-b">3</td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">3</td>
+        <td class="py-2 px-4 border-b">Engineering Graphics and Introduction to Cad</td>
+        <td class="py-2 px-4 border-b">EG</td>
+        <td class="py-2 px-4 border-b">1</td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">4</td>
+        <td class="py-2 px-4 border-b">Basic Electronics Engineering</td>
+        <td class="py-2 px-4 border-b">BXE</td>
+        <td class="py-2 px-4 border-b">3</td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">5</td>
+        <td class="py-2 px-4 border-b">Engineering Mechanics</td>
+        <td class="py-2 px-4 border-b">EM</td>
+        <td class="py-2 px-4 border-b">2</td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">6</td>
+        <td class="py-2 px-4 border-b">Project Based Learning and Management-I</td>
+        <td class="py-2 px-4 border-b">PBLM-I</td>
+        <td class="py-2 px-4 border-b"></td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">7</td>
+        <td class="py-2 px-4 border-b">Universal Human Values-I</td>
+        <td class="py-2 px-4 border-b">UHV-I</td>
+        <td class="py-2 px-4 border-b">1</td>
+        <td class="py-2 px-4 border-b"></td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">8</td>
+        <td class="py-2 px-4 border-b">Problem Solving and Programming-I</td>
+        <td class="py-2 px-4 border-b">PSP-I</td>
+        <td class="py-2 px-4 border-b">2</td>
+        <td class="py-2 px-4 border-b">6</td>
+      </tr>
+      <tr class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">9</td>
+        <td class="py-2 px-4 border-b">Physical Education</td>
+        <td class="py-2 px-4 border-b">PE</td>
+        <td class="py-2 px-4 border-b">1</td>
+        <td class="py-2 px-4 border-b"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
     </div>
   );
 };

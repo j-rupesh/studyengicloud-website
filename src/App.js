@@ -63,20 +63,20 @@ import PBLManagementISem2_SS from "./pages/notes/FYBTech/SecondSemester_material
 // === FYBTech - End Semester Material ===
 import MathematicsISem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/MathematicsISem1";
 import MathematicsISem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/MathematicsISem2";
-import PhysicsSem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/PhysicsSem1";
-import PhysicsSem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/PhysicsSem2";
-import IndustrialChemistrySem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/IndustrialChemistrySem1";
-import IndustrialChemistrySem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/IndustrialChemistrySem2";
-import BasicElectronicsEngineeringSem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/BasicElectronicsEngineeringSem1";
-import BasicElectronicsEngineeringSem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/BasicElectronicsEngineeringSem2";
-import EngineeringMechanicsSem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/EngineeringMechanicsSem1";
-import EngineeringMechanicsSem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/EngineeringMechanicsSem2";
-import ProblemSolvingProgrammingISem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/ProblemSolvingProgrammingISem1";
-import ProblemSolvingProgrammingISem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/ProblemSolvingProgrammingISem2";
-import EngineeringGraphicsCADSem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/EngineeringGraphicsCADSem1";
-import EngineeringGraphicsCADSem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/EngineeringGraphicsCADSem2";
-import PBLManagementISem1_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/PBLManagementISem1";
-import PBLManagementISem2_ES from "./pages/notes/FYBTech/SecondSemester_material_sem1/PBLManagementISem2";
+import PhysicsSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/PhysicsSem1";
+import PhysicsSem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/PhysicsSem2";
+import IndustrialChemistrySem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/IndustrialChemistrySem1";
+import IndustrialChemistrySem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/IndustrialChemistrySem2";
+import BasicElectronicsEngineeringSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/BasicElectronicsEngineeringSem1";
+import BasicElectronicsEngineeringSem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/BasicElectronicsEngineeringSem2";
+import EngineeringMechanicsSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/EngineeringMechanicsSem1";
+import EngineeringMechanicsSem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/EngineeringMechanicsSem2";
+import ProblemSolvingProgrammingISem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/ProblemSolvingProgrammingISem1";
+import ProblemSolvingProgrammingISem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/ProblemSolvingProgrammingISem2";
+import EngineeringGraphicsCADSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/EngineeringGraphicsCADSem1";
+import EngineeringGraphicsCADSem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/EngineeringGraphicsCADSem2";
+import PBLManagementISem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/PBLManagementISem1";
+import PBLManagementISem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/PBLManagementISem2";
 // import FirstSemester_sem1 from "./pages/FirstSemester_sem1";
 // ...similarly rename and import all end semester subjects
 

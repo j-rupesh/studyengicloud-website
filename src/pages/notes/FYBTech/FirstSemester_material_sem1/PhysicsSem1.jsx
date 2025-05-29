@@ -45,7 +45,7 @@ const DownloadNotesSection = () => {
       id: 1,
       title: 'Unit 1',
       thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-      downloadLink: 'https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view',
+      downloadLink: 'https://drive.google.com/file/d/1BaJJqELAJQI3Gg6xBCoe2ex8ncJOoInm/view?usp=drive_link',
       year: ' 🔴 2023-24',
       questions: [
         {
