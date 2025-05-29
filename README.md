@@ -4,9 +4,7 @@
 
 ## 🔗 Live Demo
 
-📍 **Demo**: [https://studyengicloudm.netlify.app/](https://studyengicloudm.netlify.app/)
-
-![StudyEngiCloud Screenshot](https://github.com/j-rupesh/studyengicloud-website/assets/67497228/85282c81-9851-4cb5-8c6b-65053c582fa5)
+[![StudyEngiCloud Preview](https://github.com/j-rupesh/studyengicloud-website/assets/67497228/85282c81-9851-4cb5-8c6b-65053c582fa5)](https://studyengicloudm.netlify.app/)
 
 
 ---
