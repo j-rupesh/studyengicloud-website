@@ -2,7 +2,8 @@
 
 > 📘 **Build Your Learning Hub** — A centralized platform for engineering students to access notes, study materials, mock tests, and past year papers across all semesters.
 
-![StudyEngiCloud Banner](https://i.ibb.co/skqwzQs/Screenshot-2025-05-30-015447.png)
+<img src="https://i.ibb.co/skqwzQs/Screenshot-2025-05-30-015447.png" alt="StudyEngiCloud Banner" width="800"/>
+
 
 ---
 
