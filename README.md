@@ -2,10 +2,7 @@
 
 > 📘 **Build Your Learning Hub** — A centralized platform for engineering students to access notes, study materials, mock tests, and past year papers across all semesters.
 
-## 🔗 Live Demo
-
-[![StudyEngiCloud Preview](https://github.com/j-rupesh/studyengicloud-website/assets/67497228/85282c81-9851-4cb5-8c6b-65053c582fa5)](https://studyengicloudm.netlify.app/)
-
+![StudyEngiCloud Banner](https://i.ibb.co/q3YTmXCh/quest-on-paper.png)
 
 ---
 
