@@ -8,6 +8,7 @@ import { HiViewGrid } from "react-icons/hi"; // ✅ Import added
 import { About } from "./About";
 import { Courses } from "./Courses";
 import { Instructor } from "./Instructor";
+
 // import { Blog } from "./Blog";
 
 import CategoryDropdown from "./CategoryDropdown";
@@ -33,7 +34,7 @@ export const HomeContent = () => {
 
   return (
     <>
-     <section className="relative bg-secondary h-screen w-full sm:h-screen md:h-screen">
+     <section className="relative bg-secondary min-h-screen w-full py-10 overflow-hidden">
 
   {/* 🫧Background Bubbles */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -54,7 +55,7 @@ export const HomeContent = () => {
     
       </div>
         <div className="container">
-          <div className="flex items-center justify-center md:flex-col">
+          <div className="flex items-center justify-center md:flex-col ">
 
             {/* Category Button */}
             {/* <div
@@ -91,7 +92,7 @@ export const HomeContent = () => {
               {/* Floating Buttons */}
               <div className="content">
                  {/* Popup 1 */}
-                 <button className="bg-white shadow-md absolute top-0 right-45 z-30 p-2 flex items-center rounded-lg
+                 <button className="bg-white shadow-md absolute top-2 right-45 z-30 p-2 flex items-center rounded-lg
                 sm:top-2 sm:right-1/5 md:right-0">
                   <div className="icon w-10 h-10 text-white rounded-lg flex items-center justify-center bg-indigo-400">
                     <FaBookReader size={18} />

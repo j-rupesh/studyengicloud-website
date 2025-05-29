@@ -1,33 +1,68 @@
 import React, { useState, useEffect, useRef } from "react";
 import { LinkData } from "../assets/data/dummydata";
 import { NavLink, Link } from "react-router-dom";
-import { HiViewGrid, HiOutlineSun, HiOutlineMoon, HiMenuAlt1, HiX } from "react-icons/hi";
+import {
+  HiViewGrid,
+  HiOutlineSun,
+  HiOutlineMoon,
+  HiMenuAlt1,
+  HiX,
+  HiChevronUp,
+  HiChevronDown
+} from "react-icons/hi";
 import LogoImg from "../assets/images/text_effect_study.png";
+
+const yearData = [
+  {
+    title: "FY BTech",
+    semesters: [
+      { name: "Semester 1", path: "/fy-btechsem1" },
+      { name: "Semester 2", path: "/fy-btechsem2" }
+    ]
+  },
+  {
+    title: "SY BTech",
+    semesters: [
+      { name: "Semester 3", path: "/sy-btech" },
+      { name: "Semester 4", path: "/sy-btech" }
+    ]
+  },
+  {
+    title: "Third Year",
+    semesters: [
+      { name: "Semester 5", path: "/third-year" },
+      { name: "Semester 6", path: "/third-year" }
+    ]
+  },
+  {
+    title: "Final Year",
+    semesters: [
+      { name: "Semester 7", path: "/final-year" },
+      { name: "Semester 8", path: "/final-year" }
+    ]
+  }
+];
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [openCategory, setOpenCategory] = useState(false);
-  const [darkMode, setDarkMode] = useState(() => {
-    // Check localStorage for the last saved theme
-    const storedTheme = localStorage.getItem('theme');
-    return storedTheme === 'dark'; // Return true if 'dark' is found, false otherwise
-  });
-  const [isClicked, setIsClicked] = useState(false); // State for bubble effect
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem("theme") === "dark");
+  const [openYearDropdown, setOpenYearDropdown] = useState(null);
+  const [isClicked, setIsClicked] = useState(false);
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
 
   useEffect(() => {
     document.body.classList.toggle("dark", darkMode);
-    // Save the current theme to localStorage
-    localStorage.setItem('theme', darkMode ? 'dark' : 'light');
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
         setOpenCategory(false);
       }
-      if (mobileMenuRef.current && openMenu && !mobileMenuRef.current.contains(event.target)) {
+      if (mobileMenuRef.current && openMenu && !mobileMenuRef.current.contains(e.target)) {
         setOpenMenu(false);
       }
     };
@@ -35,18 +70,8 @@ export const Header = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [openMenu]);
 
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  // Toggle bubble effect on click
-  const handleClick = () => {
-    setIsClicked(!isClicked);
-  };
+  const toggleYearDropdown = (title) =>
+    setOpenYearDropdown((prev) => (prev === title ? null : title));
 
   return (
     <header className="bg-white dark:bg-gray-900 py-4 text-black dark:text-white sticky z-50 shadow-md top-0 w-full">
@@ -54,64 +79,77 @@ export const Header = () => {
 
         {/* Logo and Category */}
         <div className="flex items-center gap-4 relative">
-          {/* Logo Container */}
-          <div className="flex items-center justify-center gap-6">
-            <img
-              src={LogoImg} // Ensure this path is correct
-              alt="Logo"
-              className="h-16 md:h-20 ml-auto transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-2 cursor-pointer relative z-10 block md:hidden"
-              onClick={handleClick} // Handle click to toggle bubble effect
-            />
-          </div>
+          {/* Logo */}
+          <img
+            src={LogoImg}
+            alt="Study Logo"
+            className="h-16 md:h-20 transition-transform hover:scale-110 hover:rotate-2 cursor-pointer block md:hidden z-10"
+            onClick={() => setIsClicked((prev) => !prev)}
+          />
 
           {/* Bubble Effect */}
           <div
-            className={`absolute -inset-2 bg-gradient-to-r from-blue-200 to-purple-300 rounded-full opacity-0 ${isClicked ? 'opacity-50 scale-110' : 'opacity-0 scale-100'} blur-lg transition-all duration-500 z-0`}
-          ></div>
+            className={`absolute -inset-2 bg-gradient-to-r from-blue-200 to-purple-300 rounded-full blur-lg transition-all duration-500 z-0 ${
+              isClicked ? "opacity-50 scale-110" : "opacity-0 scale-100"
+            }`}
+          />
 
           {/* Category Dropdown */}
-          <div
-            className="flex items-center text-sm gap-2 cursor-pointer relative hover:text-primary transition"
-            onClick={() => setOpenCategory(!openCategory)}
+          <button
+            onClick={() => setOpenCategory((prev) => !prev)}
+            aria-expanded={openCategory}
+            aria-controls="category-dropdown"
+            className="flex items-center text-sm gap-2 relative hover:text-primary transition"
           >
             <HiViewGrid size={38} />
             <span>Engineering</span>
+          </button>
 
-            {openCategory && (
-              <div
-                ref={dropdownRef}
-                className="absolute top-10 left-0 bg-white dark:bg-gray-800 shadow-xl rounded-lg w-64 p-5 z-50 transition-all duration-300 ease-in-out transform"
-              >
-                <h3 className="text-lg font-semibold mb-3 text-gray-700 dark:text-gray-100">
-                  Select Year Engineering
-                </h3>
-                <ul className="flex flex-col gap-3">
-                  {[
-                    { title: "FY BTech", path: "/fy-btech" },
-                    { title: "SY BTech", path: "/sy-btech" },
-                    { title: "Third Year", path: "/third-year" },
-                    { title: "Final Year", path: "/final-year" }
-                  ].map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="hover:bg-gray-100 dark:hover:bg-gray-700 p-3 rounded transition transform duration-300 ease-in-out"
+
+
+          {openCategory && (
+            <div
+              ref={dropdownRef}
+              id="category-dropdown"
+              className="absolute top-10 left-0 bg-white dark:bg-gray-800 shadow-lg rounded-md w-72 p-4 z-50"
+            >
+              <h3 className="text-lg font-semibold mb-3">Select Engineering Year</h3>
+              <ul className="space-y-2">
+                {yearData.map((year) => (
+                  <li key={year.title}>
+                    <button
+                      onClick={() => toggleYearDropdown(year.title)}
+                      className="w-full flex justify-between items-center px-4 py-2 bg-gradient-to-r from-teal-400 to-blue-500 text-white rounded-lg"
                     >
-                      <Link
-                        to={item.path}
-                        onClick={() => setOpenCategory(false)}
-                        className="block text-gray-800 dark:text-gray-200 hover:text-primary transition"
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
+                      <span>{year.title}</span>
+                      {openYearDropdown === year.title ? <HiChevronUp /> : <HiChevronDown />}
+                    </button>
+                    {openYearDropdown === year.title && (
+                      <ul className="mt-2 space-y-2 bg-gradient-to-r  from-indigo-200  border rounded-lg shadow-lg p-2">
+                        {year.semesters.map((sem) => (
+                          <li key={sem.name}>
+                            <Link
+                              to={sem.path}
+                              onClick={() => setOpenCategory(false)}
+                              className="block px-4 py-2 text-sm hover:bg-blue-100 dark:hover:bg-blue-400 rounded"
+                            >
+                              {sem.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
-        {/* Nav Links (Only Mobile) */}
+
+
+
+        {/* Mobile Nav Links */}
         <nav className="block md:hidden">
           <ul className="flex items-center gap-4 text-sm">
             {LinkData.map((link) => (
@@ -119,7 +157,7 @@ export const Header = () => {
                 <NavLink
                   to={link.url}
                   className={({ isActive }) =>
-                    `relative px-3 py-2 rounded-md transition-all duration-200 cursor-pointer ${
+                    `relative px-3 py-2 rounded-md ${
                       isActive
                         ? "text-primary font-semibold bg-primary/10"
                         : "text-gray-700 dark:text-gray-300 hover:text-primary hover:bg-primary/10"
@@ -133,54 +171,52 @@ export const Header = () => {
           </ul>
         </nav>
 
-        {/* Dark mode + Menu Button */}
+        {/* Right Controls */}
         <div className="flex items-center gap-4">
-          {/* Dark Mode Button */}
+          {/* Dark Mode */}
           <button
-            onClick={toggleDarkMode}
-            className="border rounded-full p-2 hover:bg-primary hover:text-white dark:hover:bg-primary dark:hover:text-white transition"
+            onClick={() => setDarkMode((prev) => !prev)}
+            aria-label="Toggle dark mode"
+            className="border rounded-full p-2 hover:bg-primary hover:text-white transition"
           >
             {darkMode ? <HiOutlineSun size={20} /> : <HiOutlineMoon size={20} />}
           </button>
 
-          {/* Desktop Menu Button */}
-          <button className="hidden md:block" onClick={toggleMenu}>
+          {/* Desktop Menu */}
+          <button
+            className="hidden md:block"
+            onClick={() => setOpenMenu((prev) => !prev)}
+            aria-label="Toggle sidebar menu"
+          >
             {openMenu ? <HiX size={25} /> : <HiMenuAlt1 size={25} />}
           </button>
         </div>
       </div>
 
-      {/* Desktop Sidebar */}
+      {/* Sidebar for Desktop */}
       {openMenu && (
         <>
-          {/* Background */}
           <div
             className="hidden md:block fixed inset-0 bg-black opacity-50 z-40"
-            onClick={toggleMenu}
-          ></div>
-
-          {/* Sidebar */}
+            onClick={() => setOpenMenu(false)}
+          />
           <div
             ref={mobileMenuRef}
-            className="hidden md:block fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-900 shadow-xl z-50 transition-transform duration-300"
+            className="hidden md:block fixed top-0 right-0 h-full w-64 bg-white dark:bg-gray-900 z-50 shadow-lg"
           >
             <div className="p-4 flex justify-end">
-              <button
-                onClick={toggleMenu}
-                className="text-gray-500 dark:text-gray-300 hover:text-gray-700 dark:hover:text-gray-100 transition-colors"
-              >
-                <HiX size={25} />
+              <button onClick={() => setOpenMenu(false)} aria-label="Close sidebar">
+                <HiX size={25} className="text-gray-600 dark:text-gray-300" />
               </button>
             </div>
-
             <nav className="flex flex-col p-4">
               {LinkData.map((link) => (
                 <NavLink
                   key={link.id}
                   to={link.url}
-                  onClick={toggleMenu}
+                  onClick={() => setOpenMenu(false)}
                   className={({ isActive }) =>
-                    `relative px-4 py-3 rounded-md transition-all duration-200 cursor-pointer ${
+                    `px-4 py-3 rounded-md transition ${
                       isActive
                         ? "text-primary font-semibold bg-primary/10"
                         : "text-gray-800 dark:text-gray-200 hover:text-primary hover:bg-primary/10"
@@ -188,8 +224,6 @@ export const Header = () => {
                   }
                 >
                   {link.title}
-                  {/* Line Divider */}
-                  <div className="absolute bottom-0 left-0 w-full h-px bg-gray-300 dark:bg-gray-700 mt-2"></div>
                 </NavLink>
               ))}
             </nav>
