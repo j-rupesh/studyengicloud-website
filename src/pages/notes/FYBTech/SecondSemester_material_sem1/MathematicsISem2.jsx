@@ -255,9 +255,21 @@ const DownloadNotesSection = () => {
                 <button onClick={() => openPdfModal(category.downloadLink)} className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-xs ">
                   View PDF
                 </button>
-                <button onClick={() => openTestModal(category)} className="bg-gray-300 hover:bg-gray-400 text-gray-900 py-2 px-4 rounded-md text-xs">
+                {/* <button onClick={() => openTestModal(category)} className="bg-gray-300 hover:bg-gray-400 text-gray-900 py-2 px-4 rounded-md text-xs">
                   Test MCQ
-                </button>
+                </button> */}
+
+
+
+                  <button
+                    onClick={() => openTestModal(category)}
+                    className="bg-gray-300 hover:bg-gray-400 text-gray-900 py-2 px-4 rounded-md text-xs"
+                    disabled={true} // Add this line to disable the button
+                  >
+                    Test MCQ
+                  </button>
+
+                  
               </div>
             </div>
           </div>

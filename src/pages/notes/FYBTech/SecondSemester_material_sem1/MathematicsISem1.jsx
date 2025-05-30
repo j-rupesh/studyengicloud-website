@@ -549,9 +549,9 @@ const DownloadNotesSection = () => {
 
   const fileItems = [
     { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "/notes/presentation.pptx" },
-    { id: 2, name: "Graph Image.png", type: "image", link: "/notes/presentation.pptx" },
-    { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
-    { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
+    // { id: 2, name: "Graph Image.png", type: "image", link: "/notes/presentation.pptx" },
+    // { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
+    // { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
   ];
 
   const resetTest = () => {
@@ -678,9 +678,22 @@ const DownloadNotesSection = () => {
                 <button onClick={() => openPdfModal(category.downloadLink)} className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md text-xs ">
                   View PDF
                 </button>
-                <button onClick={() => openTestModal(category)} className="bg-gray-300 hover:bg-gray-400 text-gray-900 py-2 px-4 rounded-md text-xs">
+                {/* <button onClick={() => openTestModal(category)} className="bg-gray-300 hover:bg-gray-400 text-gray-900 py-2 px-4 rounded-md text-xs">
                   Test MCQ
-                </button>
+                </button> */}
+
+
+
+                  <button
+                    onClick={() => openTestModal(category)}
+                    className="bg-gray-300 hover:bg-gray-400 text-gray-900 py-2 px-4 rounded-md text-xs"
+                    disabled={true} // Add this line to disable the button
+                  >
+                    Test MCQ
+                  </button>
+
+
+                  
               </div>
             </div>
           </div>

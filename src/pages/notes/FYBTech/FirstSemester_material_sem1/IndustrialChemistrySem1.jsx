@@ -138,9 +138,13 @@ const DownloadNotesSection = () => {
   ];
 
   const fileItems = [
-    // { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
+     { id: 1, name: "Reverse Osmosis", type: "pdf", link: "https://drive.google.com/file/d/18i_JcvuSmAKIaECDFfGaiyxIO39uI6WP/view?usp=sharing" },
+      { id: 2, name: "Zeolite Softening Process", type: "pdf", link: "https://drive.google.com/file/d/1b49LIbaD6IecsiDgqnBnSAZVD7FnHiiA/view?usp=sharing" },
+       { id: 3, name: "notes unit 1", type: "pdf", link: "https://drive.google.com/file/d/1xGSaG-nX_D4vonnGUHbzUhawSuns4kIU/view?usp=sharing" },
+        { id: 4, name: "ESTIMATION OF HARDNESS", type: "pdf", link: "https://drive.google.com/file/d/1xGSaG-nX_D4vonnGUHbzUhawSuns4kIU/view?usp=sharing" },
+        { id: 5, name: "Assignment 1", type: "pdf", link: "https://drive.google.com/file/d/1SZiflZGFroXNHeSJAGo26zMXEtq0cpiN/view?usp=sharing" },
     // { id: 2, name: "Graph Image.png", type: "image", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
-    // { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
+    { id: 3, name: "Presentation", type: "ppt", link: "/notes/presentation.pptx" },
     // { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
   ];
 

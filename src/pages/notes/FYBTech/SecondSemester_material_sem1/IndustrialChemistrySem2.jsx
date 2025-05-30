@@ -110,18 +110,18 @@ const DownloadNotesSection = () => {
     //     },
     //   ],
     // },
-    // {
-    //   id: 2,
-    //   title: 'Unit 1',
-    //   thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
-    //   downloadLink: 'https://drive.google.com/file/d/1BaJJqELAJQI3Gg6xBCoe2ex8ncJOoInm/view?usp=drive_link',
-    //   year: ' 🔴 2024-  25',
-    //   questions: [
-    //     { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
-    //     { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },
-    //     { question: "What does the acronym 'CPU' stand for?", options: ["Central Processing Unit", "Computer Processing Unit", "Core Processing Unit", "Command Processing Unit"], correctAnswer: "Central Processing Unit" },
-    //   ],
-    // },
+    {
+      id: 2,
+      title: 'Unit 1',
+      thumbnailSrc: 'https://i.ibb.co/q3YTmXCh/quest-on-paper.png',
+      downloadLink: 'https://drive.google.com/file/d/1BaJJqELAJQI3Gg6xBCoe2ex8ncJOoInm/view?usp=drive_link',
+      year: ' 🔴 2024-  25',
+      questions: [
+        { question: "Which of the following is used to allocate memory dynamically in C?", options: ["malloc()", "new()", "alloc()", "allocate()"], correctAnswer: "malloc()" },
+        { question: "What is the size of an int in C (typically)?", options: ["2 bytes", "4 bytes", "8 bytes", "1 byte"], correctAnswer: "4 bytes" },
+        { question: "What does the acronym 'CPU' stand for?", options: ["Central Processing Unit", "Computer Processing Unit", "Core Processing Unit", "Command Processing Unit"], correctAnswer: "Central Processing Unit" },
+      ],
+    },
   ];
 
   const fileItems = [

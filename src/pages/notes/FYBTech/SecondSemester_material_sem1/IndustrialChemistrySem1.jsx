@@ -125,11 +125,14 @@ const DownloadNotesSection = () => {
   ];
 
   const fileItems = [
-    // { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
-    { id: 3, name: "UNIT 2 STRUCTURE PROPERT....pptx", type: "ppt", link: "https://drive.google.com/file/d/1zajIsDwaUHThiu6c9nDd8tW7fIGM_B-c/view?usp=sharing" },
-     { id: 3, name: "SPECTROSCOPY.pptx", type: "ppt", link: "https://drive.google.com/file/d/1KKSJzwmsPNj2zijwr9YgW-qiRP6Ihs1O/view?usp=sharing" },
-    // { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
+    { id: 1, name: "Lecture Notes.pdf", type: "pdf", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
+    { id: 3, name: "UNIT 2 STRUCTURE PROPERT....", type: "ppt", link: "https://drive.google.com/file/d/1zajIsDwaUHThiu6c9nDd8tW7fIGM_B-c/view?usp=sharing" },
+        { id: 3, name: "UNIT 2 STRUCTURE PROPERT....", type: "ppt", link: "https://drive.google.com/file/d/1lVOPSeTeHSTaaD4DzvVv2rO0ZOnH1Ph8/view?usp=sharing" },
+       { id: 3, name: "Structure and Property Relationship in Metals", type: "doc", link: "https://docs.google.com/document/d/1dT6J_KkMiyhWGTNNaoMODz2MZow21awP/edit?usp=sharing&ouid=118374378611982572109&rtpof=true&sd=true" },
+     { id: 4, name: " UNIT 2 SPECTROSCOPY", type: "ppt", link: "https://drive.google.com/file/d/1KKSJzwmsPNj2zijwr9YgW-qiRP6Ihs1O/view?usp=sharing" },
+    { id: 4, name: "Chapter Summary.docx", type: "doc", link: "https://classroom.google.com/c/NzE5NDg5NTc0Mjcw/sa/NzIxNTI0NjAzMjA0/details" },
   ];
+
 
   const resetTest = () => {
     setSelectedCategory(null);

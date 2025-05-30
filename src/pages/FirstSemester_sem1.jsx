@@ -12,37 +12,37 @@ const subjects = [
   
  
   {
-    id: 3,
+    id: 2,
     name: "Engineering Mechanics",
     sem1Path: "/fybtech/engineering-mechanics/semester-1",
     // sem2Path: "/fybtech/industrial-chemistry/semester-2",
   },
   {
-    id: 4,
+    id: 3,
     name: "Industrial Chemistry",
     sem1Path: "/fybtech/industrial-chemistry/semester-1",
     // sem2Path: "/fybtech/basic-electronics/semester-2",
   },
   {
-    id: 5,
+    id: 4,
     name: "Basic Electronics Engineering",
     sem1Path: "/fybtech/basic-electronics/semester-1",
     // sem2Path: "/fybtech/engineering-mechanics/semester-2",
   },
   {
-    id: 6,
+    id: 5,
     name: "Problem Solving and Programming I",
     sem1Path: "/fybtech/problem-solving-programming-i/semester-1",
     // sem2Path: "/fybtech/problem-solving-programming-i/semester-2",
   },
   {
-    id: 7,
+    id: 6,
     name: "Engineering Graphics & Introduction to CAD",
     sem1Path: "/fybtech/engineering-graphics-cad/semester-1",
     // sem2Path: "/fybtech/engineering-graphics-cad/semester-2",
   },
   {
-    id: 8,
+    id: 7,
     name: "Project Based Learning Management I",
     sem1Path: "/fybtech/pbl-management-i/semester-1",
     // sem2Path: "/fybtech/pbl-management-i/semester-2",

@@ -166,9 +166,21 @@ const DownloadNotesSection = () => {
   const fileItems = [
     { id: 1, name: "unit 3 fuel.pdf", type: "pdf", link: "https://drive.google.com/file/d/1JmetRMAD76vpBwJwdlduTlCZebOauWzr/view?usp=sharing" },
      { id: 1, name: "UNIT 4 ASSIGNMENT.pdf.", type: "pdf", link: "https://drive.google.com/file/d/1JiIZLIFhD6-eGUJ9LJNuJeGB4PuSF74N/view?usp=sharing" },
+     { id: 1, name: "Biodiesel Preparation", type: "ppt", link: "https://drive.google.com/file/d/1z_i8yI6lCB6CPDsrbR0zADwUPxOWchgg/view?usp=sharing" },
+     { id: 1, name: "Hydrogen Fuel.", type: "pdf", link: "https://drive.google.com/file/d/1JiIZLIFhD6-eGUJ9LJNuJeGB4PuSF74N/view?usp=sharing" },
+     { id: 1, name: "STATISTICS", type: "pdf", link: "https://drive.google.com/file/d/1bRz2mTkBpWWiq3WIE0Uz_vlfsBqygTVP/view?usp=sharing" },
+     { id: 1, name: "Proximate Analysis", type: "pdf", link: "https://drive.google.com/file/d/1Mdl_5yFRFSjFLBBGni_POMlUhYljsVpn/view?usp=sharing" },
+     { id: 1, name: "Introduction to Fuels", type: "pdf", link: "https://drive.google.com/file/d/1ekLVij1uth8LTYC3kV6GebUEKZWLh9NZ/view?usp=sharing" },
+     { id: 1, name: "CALORIMETRE", type: "pdf", link: "https://drive.google.com/file/d/1BZKdmZ9tFg9h9CgBDlkmFb_wT98JG9UX/view?usp=sharing" },
+     { id: 1, name: "Ultimate analysis of fule.", type: "pdf", link: "https://drive.google.com/file/d/12Be7LUNX4vK1WdlYAm6GcddJTw2cjDv2/view?usp=sharing" },
+  
+
     // { id: 2, name: "Graph Image.png", type: "image", link: "https://drive.google.com/file/d/1eKqndQXncZQyMWn0H4ivIo1lBMttkjHl/view" },
     // { id: 3, name: "Presentation.pptx", type: "ppt", link: "/notes/presentation.pptx" },
-    // { id: 4, name: "Chapter Summary.docx", type: "doc", link: "/notes/summary.docx" },
+    { id: 4, name: "UNIT 4 ASSIGNMENT", type: "doc", link: "https://drive.google.com/file/d/1JiIZLIFhD6-eGUJ9LJNuJeGB4PuSF74N/view?usp=sharing" },
+       { id: 1, name: "UNIT 4 ASSIGNMENT.pdf", type: "pdf", link: "https://drive.google.com/file/d/1ObS_Ef5U5BaQCmVVxaJk37X5qNLUCOXa/view?usp=sharing" },
+        { id: 1, name: "Unit 3 Chapter Summary.pdf", type: "pdf", link: "https://drive.google.com/file/d/10dKoJ3YIDtNIRfwXcUkntVARZS-m23Ig/view?usp=sharing" },
+
   ];
 
   const resetTest = () => {

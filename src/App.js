@@ -29,7 +29,7 @@ import MathematicsISem2_FS from "./pages/notes/FYBTech/FirstSemester_material_se
 import PhysicsSem1_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/PhysicsSem1";
 import PhysicsSem2_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/PhysicsSem2";
 import IndustrialChemistrySem1_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/IndustrialChemistrySem1";
-import IndustrialChemistrySem2_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/IndustrialChemistrySem2";
+//import IndustrialChemistrySem2_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/IndustrialChemistrySem2";
 import BasicElectronicsEngineeringSem1_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/BasicElectronicsEngineeringSem1";
 import BasicElectronicsEngineeringSem2_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/BasicElectronicsEngineeringSem2";
 import EngineeringMechanicsSem1_FS from "./pages/notes/FYBTech/FirstSemester_material_sem1/EngineeringMechanicsSem1";
@@ -47,7 +47,7 @@ import MathematicsISem2_SS from "./pages/notes/FYBTech/SecondSemester_material_s
 import PhysicsSem1_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/PhysicsSem1";
 import PhysicsSem2_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/PhysicsSem2";
 import IndustrialChemistrySem1_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/IndustrialChemistrySem1";
-import IndustrialChemistrySem2_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/IndustrialChemistrySem2";
+//import IndustrialChemistrySem2_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/IndustrialChemistrySem2";
 import BasicElectronicsEngineeringSem1_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/BasicElectronicsEngineeringSem1";
 import BasicElectronicsEngineeringSem2_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/BasicElectronicsEngineeringSem2";
 import EngineeringMechanicsSem1_SS from "./pages/notes/FYBTech/SecondSemester_material_sem1/EngineeringMechanicsSem1";
@@ -66,7 +66,7 @@ import MathematicsISem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1
 import PhysicsSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/PhysicsSem1";
 import PhysicsSem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/PhysicsSem2";
 import IndustrialChemistrySem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/IndustrialChemistrySem1";
-import IndustrialChemistrySem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/IndustrialChemistrySem2";
+//import IndustrialChemistrySem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/IndustrialChemistrySem2";
 import BasicElectronicsEngineeringSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/BasicElectronicsEngineeringSem1";
 import BasicElectronicsEngineeringSem2_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/BasicElectronicsEngineeringSem2";
 import EngineeringMechanicsSem1_ES from "./pages/notes/FYBTech/EndSemester-material_sem1/EngineeringMechanicsSem1";
@@ -119,7 +119,7 @@ function App() {
     <Route path="/fybtech/physics/semester-1" element={<Layout><PhysicsSem1_FS /></Layout>} />
     <Route path="/fybtech/physics/semester-2" element={<Layout><PhysicsSem2_FS /></Layout>} />
     <Route path="/fybtech/industrial-chemistry/semester-1" element={<Layout><IndustrialChemistrySem1_FS /></Layout>} />
-    <Route path="/fybtech/industrial-chemistry/semester-2" element={<Layout><IndustrialChemistrySem2_FS /></Layout>} />
+    {/* <Route path="/fybtech/industrial-chemistry/semester-2" element={<Layout><IndustrialChemistrySem2_FS /></Layout>} /> */}
     <Route path="/fybtech/basic-electronics/semester-1" element={<Layout><BasicElectronicsEngineeringSem1_FS /></Layout>} />
     <Route path="/fybtech/basic-electronics/semester-2" element={<Layout><BasicElectronicsEngineeringSem2_FS /></Layout>} />
     <Route path="/fybtech/engineering-mechanics/semester-1" element={<Layout><EngineeringMechanicsSem1_FS /></Layout>} />
@@ -137,7 +137,7 @@ function App() {
     <Route path="/fybtech/physics/semester-1-second" element={<Layout><PhysicsSem1_SS /></Layout>} />
     <Route path="/fybtech/physics/semester-2-second" element={<Layout><PhysicsSem2_SS /></Layout>} />
     <Route path="/fybtech/industrial-chemistry/semester-1-second" element={<Layout><IndustrialChemistrySem1_SS /></Layout>} />
-    <Route path="/fybtech/industrial-chemistry/semester-2-second" element={<Layout><IndustrialChemistrySem2_SS /></Layout>} />
+    {/* <Route path="/fybtech/industrial-chemistry/semester-2-second" element={<Layout><IndustrialChemistrySem2_SS /></Layout>} /> */}
     <Route path="/fybtech/basic-electronics-engineering/semester-1-second" element={<Layout><BasicElectronicsEngineeringSem1_SS /></Layout>} />
     <Route path="/fybtech/basic-electronics-engineering/semester-2-second" element={<Layout><BasicElectronicsEngineeringSem2_SS /></Layout>} />
     <Route path="/fybtech/engineering-mechanics/semester-1-second" element={<Layout><EngineeringMechanicsSem1_SS /></Layout>} />
@@ -155,7 +155,7 @@ function App() {
     <Route path="/fybtech/physics/semester-1-end" element={<Layout><PhysicsSem1_ES /></Layout>} />
     <Route path="/fybtech/physics/semester-2-end" element={<Layout><PhysicsSem2_ES /></Layout>} />
     <Route path="/fybtech/industrial-chemistry/semester-1-end" element={<Layout><IndustrialChemistrySem1_ES /></Layout>} />
-    <Route path="/fybtech/industrial-chemistry/semester-2-end" element={<Layout><IndustrialChemistrySem2_ES /></Layout>} />
+    {/* <Route path="/fybtech/industrial-chemistry/semester-2-end" element={<Layout><IndustrialChemistrySem2_ES /></Layout>} /> */}
     <Route path="/fybtech/basic-electronics-engineering/semester-1-end" element={<Layout><BasicElectronicsEngineeringSem1_ES /></Layout>} />
     <Route path="/fybtech/basic-electronics-engineering/semester-2-end" element={<Layout><BasicElectronicsEngineeringSem2_ES /></Layout>} />
     <Route path="/fybtech/engineering-mechanics/semester-1-end" element={<Layout><EngineeringMechanicsSem1_ES /></Layout>} />
